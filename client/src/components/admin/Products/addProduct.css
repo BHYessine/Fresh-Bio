@@ -1,0 +1,85 @@
+.product-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 18px;
+  font-family: "Shippori Antique", sans-serif;
+}
+.product-action {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 350px;
+  border: var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+}
+.product-action label {
+  width: 100%;
+  min-height: 76px;
+}
+.product-action input,
+.product-action select,
+.product-action textarea {
+  width: 100%;
+  border: var(--border);
+  border-radius: 5px;
+  padding: 7px 10px;
+}
+
+.btn-action {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0 0;
+  gap: 10px;
+}
+.btn-action button,
+.btn-action a {
+  min-width: 150px;
+  padding: 5px 0;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border: var(--border);
+  transition: var(--transition);
+  text-align: center;
+}
+.btn-action button:hover:not(:disabled),
+.btn-action a:hover {
+  background-color: var(--border-color);
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 570px) {
+  .product-details {
+    height: 80vh;
+    font-size: 14px;
+  }
+  .product-action {
+    width: 330px;
+    padding: 10px;
+  }
+  .product-action label {
+    min-height: 70px;
+  }
+  .product-action input,
+  .product-action select,
+  .product-action textarea {
+    padding: 4px 10px;
+  }
+
+  .btn-action {
+    padding: 5px 0 0;
+  }
+  .btn-action button {
+    padding: 5px 0;
+    font-size: 14px;
+  }
+}

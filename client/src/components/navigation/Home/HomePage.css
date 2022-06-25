@@ -1,0 +1,126 @@
+.type-1 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fresh-bio.appspot.com/o/vegetablesCollection.jpg?alt=media&token=c75f0c6d-59c1-49f9-bf3d-c9adf6610205");
+}
+.type-2 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fresh-bio.appspot.com/o/fruitCollection.jpg?alt=media&token=931066c2-1166-43b9-be84-e571e910651f");
+}
+.type-3 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fresh-bio.appspot.com/o/meatCollection.jpg?alt=media&token=a57c9eff-bbb5-465d-b0b3-d763b7afb68c");
+}
+.homeContainer .type-4 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fresh-bio.appspot.com/o/chickenCollection.jpg?alt=media&token=d382442a-9054-498f-b652-640d669db135");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.homeContainer {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Shippori Antique", sans-serif;
+  width: 100%;
+  gap: 50px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  width: 900px;
+}
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(223, 223, 223);
+  padding: 20px;
+  border-radius: 50px;
+  width: 300px;
+  box-shadow: var(--box-shadow);
+}
+.icon-service {
+  width: 50px;
+  height: 50px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 900px;
+}
+.productType {
+  min-width: 400px;
+  height: 250px;
+  border: var(--border);
+  border-radius: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: var(--box-shadow);
+}
+.productDetail {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeContainer a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 570px) {
+  .homeContainer {
+    padding-bottom: 10px;
+    padding-top: 75px;
+    gap: 20px;
+  }
+  .products {
+    flex-direction: column;
+    gap: 15px;
+    width: auto;
+    margin-bottom: 0px;
+  }
+  .productType {
+    min-width: 260px;
+    height: 130px;
+    border-radius: 20px;
+  }
+  .productDetail h2 {
+    font-size: 18px;
+  }
+
+  .services {
+    gap: 20px;
+    justify-content: center;
+  }
+  .service {
+    gap: 10px;
+    padding: 5px;
+    border-radius: 50px;
+    width: 50px;
+  }
+  .txt-service {
+    display: none;
+  }
+  .icon-service {
+    width: 30px;
+    height: 30px;
+  }
+}

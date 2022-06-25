@@ -1,0 +1,14 @@
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 210px;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 570px) {
+  .products-list {
+    padding-top: 155px;
+  }
+}

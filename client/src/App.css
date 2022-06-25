@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
+.container {
+  margin-left: 230px;
+  font-family: "Shippori Antique", sans-serif;
+}
+.container h1 {
+  border-bottom: var(--border);
+  padding: 20px;
+}
+
+/* button:disabled {
+  cursor: no-drop;
+  color: gray;
+  border-color: gray;
+} */
+
+*,
+body {
+  --background-color: rgb(171, 212, 46);
+  --text-color: white;
+  --border-color: rgb(255, 153, 0);
+  --background-btn: #f7f5e7;
+  --background-btn-hover: #e4dfbd;
+  --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --transition: all 0.2s ease-in-out;
+  --border: 2px solid var(--border-color);
+  --heights: 80vh;
+  --widths: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/* body {
+  width: 100vw;
+} */
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

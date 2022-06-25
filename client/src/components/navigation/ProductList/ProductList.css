@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.products-container {
+  z-index: 1;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Shippori Antique", sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+.containerItems {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  width: 60vw;
+  min-height: 1000px;
+}
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.numberList {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+  margin: 20px 0;
+  bottom: -80px;
+  width: 100%;
+}
+.btn-page {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  border: var(--border);
+  color: var(--border-color);
+  transition: var(--transition);
+}
+.btn-page:hover:not(:disabled) {
+  background-color: var(--border-color);
+  color: white;
+}
+.btn-page:disabled,
+.card-btn:disabled .icon {
+  color: gray;
+  border-color: gray;
+  cursor: no-drop;
+}
+@media only screen and (max-width: 570px) {
+  .products-container {
+    padding-top: 60px;
+  }
+  .containerItems {
+    padding-top: 120px;
+    width: 100vw;
+  }
+  .productsContainer {
+    gap: 10px;
+    padding-top: 10px;
+    margin-bottom: 60px;
+  }
+
+  .numberList {
+    margin: 10px 0;
+    bottom: 0px;
+  }
+  .btn-page {
+    min-width: 30px;
+  }
+}

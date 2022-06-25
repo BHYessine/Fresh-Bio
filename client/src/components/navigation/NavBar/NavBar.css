@@ -1,0 +1,162 @@
+.navbarContainer {
+  position: fixed;
+  z-index: 2;
+  border-bottom: var(--border);
+  background-color: var(--background-color);
+  height: 80px;
+  width: 100%;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: "Shippori Antique", sans-serif;
+  height: 100%;
+  /* width: 100vw; */
+}
+
+.navBar .nav-logo {
+  padding-left: 20px;
+  font-size: 30px;
+  font-family: "Satisfy", cursive;
+  min-width: 225px;
+}
+.logoIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li {
+  float: left;
+  padding: 5px 20px;
+}
+.nav-links li:not(:last-child) {
+  border-right: var(--border);
+}
+.link-title {
+  margin: 0;
+}
+.navBar a {
+  color: white;
+  text-decoration: none;
+  padding: 3px 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: var(--transition);
+}
+.navBar li a:hover,
+.navBar .active {
+  background-color: white;
+  color: var(--background-color);
+  border-bottom: var(--border);
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-right: 20px;
+}
+.nav-cart {
+  position: relative;
+}
+.nav-cart div {
+  background-color: white;
+  color: var(--background-color);
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.nav-counter {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+  background-color: var(--border-color);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  font-size: 14px;
+}
+.icon-cart,
+.icon-sign {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 570px) {
+  .navbarContainer {
+    height: 60px;
+  }
+  .navBar {
+    width: 100vw;
+  }
+  .navBar .nav-logo {
+    padding-left: 10px;
+    min-width: 120px;
+  }
+  .logoTitle {
+    font-size: 16px;
+  }
+  .logoIcon {
+    width: 30px;
+    height: 30px;
+  }
+  .nav-links {
+    width: 130px;
+  }
+  .nav-links li {
+    padding: 5px 5px;
+  }
+
+  .link-title {
+    display: none;
+  }
+  .navBar a {
+    padding: 3px 5px;
+    gap: 5px;
+    transition: none;
+  }
+  .nav-user {
+    gap: 10px;
+    padding-right: 5px;
+  }
+  .nav-cart {
+    min-width: 20px;
+  }
+  .nav-counter {
+    right: 0;
+    top: -10px;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+  }
+  .icon-cart {
+    height: 20px;
+    width: 20px;
+    right: 10px;
+  }
+  .nav-cart div {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+}

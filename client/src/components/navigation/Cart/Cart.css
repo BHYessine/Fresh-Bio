@@ -1,0 +1,215 @@
+.cartContainer {
+  padding-top: 100px;
+  z-index: 1;
+  min-height: 90vh;
+  font-family: "Shippori Antique", sans-serif;
+}
+.cartList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 50px;
+  width: 100%;
+  gap: 50px;
+}
+.cartTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 200px;
+  border: var(--border);
+  border-radius: 30px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.cartTotal button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  width: 100%;
+  height: 45px;
+  border: var(--border);
+  border-radius: 20px;
+  color: white;
+  background-color: var(--border-color);
+  font-size: 16px;
+  font-family: "Shippori Antique", sans-serif;
+  transition: var(--transition);
+}
+.cartTotal button:hover:not(:disabled) {
+  background-color: white;
+  color: var(--border-color);
+}
+.cartTotal a {
+  width: 100%;
+}
+.cartTotal button:disabled {
+  cursor: no-drop;
+  border-color: rgb(190, 188, 188);
+  background-color: rgb(190, 188, 188);
+}
+.cartTotal .return {
+  width: 30px;
+  height: 30px;
+}
+.cartHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  padding: 7px;
+  border-bottom: var(--border);
+  text-align: center;
+}
+
+.cartItems {
+  padding-top: 10px;
+}
+
+.itemDetails {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  text-align: center;
+}
+.itemDetails:not(:last-child) {
+  border-bottom: var(--border);
+}
+.itemTitle {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  width: 330px;
+}
+.itemPrice {
+  width: 180px;
+}
+.itemQuantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  width: 180px;
+}
+.itemTotal {
+  width: 180px;
+}
+.icon-item {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
+.icon-item:disabled {
+  cursor: no-drop;
+}
+.dash {
+  background-color: rgb(255, 153, 0);
+}
+.plus {
+  background-color: rgb(153, 204, 0);
+}
+.delete {
+  color: red;
+}
+
+.cartEmpty {
+  text-align: center;
+  padding: 50px;
+}
+.iconEmpty {
+  width: 250px;
+  height: 250px;
+  color: white;
+  background-color: rgb(223, 223, 223);
+  padding: 50px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 570px) {
+  .cartContainer {
+    padding-top: 70px;
+  }
+  .cartList {
+    flex-direction: column;
+    padding: 0;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  .cartTotal {
+    gap: 10px;
+    min-width: 150px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .cartTotal button {
+    gap: 5px;
+    height: 25px;
+    font-size: 12px;
+  }
+  .cartTotal .return {
+    width: 20px;
+    height: 20px;
+  }
+  .cartHeader {
+    font-size: 14px;
+  }
+  .itemDetails {
+    padding: 7px 2px;
+  }
+  .cartDetails {
+    min-height: 480px;
+    font-size: 11px;
+  }
+  .cartItems {
+    padding-top: 5px;
+  }
+
+  .itemTitle {
+    gap: 5px;
+    width: 230px;
+  }
+  .itemTitle img {
+    width: 30px;
+    height: 30px;
+  }
+  .itemPrice {
+    width: 200px;
+  }
+  .itemQuantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    width: 180px;
+  }
+  .itemTotal {
+    width: 180px;
+  }
+  .icon-item {
+    width: 15px;
+    height: 15px;
+    font-size: 11px;
+  }
+
+  .cartEmpty {
+    padding: 30px;
+  }
+  .iconEmpty {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+  }
+}

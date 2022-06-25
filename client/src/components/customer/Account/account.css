@@ -1,0 +1,63 @@
+.userDetail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userDetail img {
+  position: absolute;
+  /* border: var(--border); */
+  top: 30px;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(207, 207, 207);
+  border-radius: 50%;
+  padding: 10px;
+}
+.userInfo {
+  background-color: rgb(235, 235, 235);
+  padding: 30px;
+  margin-top: 130px;
+  padding-top: 130px;
+  width: 500px;
+  min-height: 400px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.userInfo label {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  height: 50px;
+}
+.userInfo label h2 {
+  width: 185px;
+}
+@media only screen and (max-width: 570px) {
+  .userDetail img {
+    top: 30px;
+    width: 120px;
+    height: 120px;
+  }
+  .userInfo {
+    padding: 20px;
+    margin-top: 80px;
+    padding-top: 90px;
+    width: 90%;
+    min-height: 220px;
+  }
+  .userInfo label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+  }
+  .userInfo label h2 {
+    font-size: 14px;
+  }
+}

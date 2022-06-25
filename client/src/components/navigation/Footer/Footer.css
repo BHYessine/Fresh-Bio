@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
+
+.Footer {
+  border-top: var(--border);
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fresh-bio.appspot.com/o/marche.jpeg?alt=media&token=9866f915-7ee7-45aa-a88f-525670e2492a");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  margin-top: 80px;
+}
+.footerContainer {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: row;
+  font-family: "Shippori Antique", sans-serif;
+  width: 100%;
+}
+.footerContainer .information {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 50%;
+}
+
+.footerContainer .infoDetails {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.footerContainer .details {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 16px;
+  gap: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-description {
+  padding: 20px;
+  border-right: var(--border);
+  border-left: var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+.copyright {
+  font-size: 14px;
+}
+.footerIcon {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (max-width: 570px) {
+  .Footer {
+    margin-top: 0px;
+  }
+  .footerContainer {
+    position: relative;
+  }
+  .footer-description {
+    position: absolute;
+    padding: 5px;
+    border-right: none;
+    border-left: none;
+    border-top: var(--border);
+    font-size: 14px;
+    bottom: 0;
+    gap: 10px;
+  }
+  .footerContainer .information {
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .footerContainer .information h2 {
+    font-size: 14px;
+  }
+  .footerContainer .infoDetails {
+    gap: 10px;
+    margin-bottom: 80px;
+  }
+
+  .footerContainer .details {
+    font-size: 12px;
+    gap: 5px;
+  }
+  .footerIcon {
+    width: 15px;
+    height: 15px;
+  }
+  .copyright {
+    font-size: 11px;
+  }
+}

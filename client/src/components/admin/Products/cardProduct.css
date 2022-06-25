@@ -1,0 +1,85 @@
+.verticalCard {
+  position: relative;
+  width: 420px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid var(--background-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-shadow: 0 0 2px rgb(173, 173, 173);
+  font-family: "Shippori Antique", sans-serif;
+}
+.products-list button {
+  cursor: pointer;
+  border: 3px solid rgb(173, 173, 173);
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  color: rgb(173, 173, 173);
+  border-radius: 50%;
+  font-size: 80px;
+}
+.verticalCard .col-1 {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-right: var(--border);
+}
+.verticalCard .col-2 {
+  position: relative;
+  width: 65%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 10px;
+}
+.verticalCard .col-1 img {
+  width: 100%;
+  height: 120px;
+}
+
+.card-btn {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  width: auto;
+  bottom: 0;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.card-btn .icon {
+  width: 25px;
+  height: 25px;
+  color: var(--border-color);
+}
+
+@media only screen and (max-width: 570px) {
+  .verticalCard {
+    width: 330px;
+    height: 130px;
+  }
+  .verticalCard .col-1 {
+    width: 45%;
+  }
+  .verticalCard .col-2 {
+    width: 60%;
+    height: 100%;
+  }
+  .verticalCard .col-1 img {
+    width: 75%;
+    height: 90px;
+  }
+  .verticalCard h4 {
+    font-size: 12px;
+  }
+}

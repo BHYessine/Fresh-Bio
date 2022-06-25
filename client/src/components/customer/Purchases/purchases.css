@@ -1,0 +1,82 @@
+.purchasesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  width: 80vw;
+}
+.purchasesDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: var(--border);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+}
+.orderCode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.orderList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.orderList .cartProducts {
+  width: auto;
+}
+.orderCode button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  min-width: 170px;
+  border: var(--border);
+  border-radius: 20px;
+  color: white;
+  background-color: var(--border-color);
+  font-size: 16px;
+  font-family: "Shippori Antique", sans-serif;
+  padding: 5px;
+  transition: var(--transition);
+}
+.orderCode button:hover:not(:disabled) {
+  background-color: white;
+  color: var(--border-color);
+}
+@media only screen and (max-width: 570px) {
+  .purchasesContainer {
+    gap: 100px;
+    padding: 5px;
+    width: 100%;
+  }
+  .purchasesDetail {
+    padding: 10px;
+  }
+  .orderCode {
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .orderCode h4 {
+    font-size: 15px;
+  }
+  .orderList {
+    justify-content: center;
+    gap: 0px;
+  }
+
+  .orderCode button {
+    min-width: 100px;
+  }
+}

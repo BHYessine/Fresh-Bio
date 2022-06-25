@@ -1,0 +1,72 @@
+.navbar {
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  width: 230px;
+  height: 100vh;
+  padding: 10px 0;
+  font-family: "Shippori Antique", sans-serif;
+  border-right: var(--border);
+}
+.navbar .menu {
+  margin-bottom: 50px;
+  font-size: 25px;
+  padding: 0;
+}
+
+.navbar a,
+.navbar .menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--text-color);
+  width: 100%;
+  padding: 15px;
+  transition: var(--transition);
+  /* border-top: 2px solid var(--background-color); */
+  border-bottom: 2px solid var(--background-color);
+}
+.navbar a:hover,
+.navbar .active {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  /* border-top: var(--border); */
+  border-bottom: var(--border);
+}
+.navbar .icon {
+  width: 30px;
+  height: 30px;
+}
+.navbar .logout {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 570px) {
+  .container {
+    margin-left: 55px;
+  }
+  .container h1 {
+    padding: 12px;
+    font-size: 18px;
+  }
+  .navbar {
+    width: 55px;
+    padding: 20px 0;
+  }
+  .navbar p,
+  .navbar .nav-cart,
+  .navbar .menu {
+    display: none;
+  }
+
+  .navbar a {
+    padding: 10px;
+  }
+}

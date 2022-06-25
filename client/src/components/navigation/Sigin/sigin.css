@@ -1,0 +1,15 @@
+.siginContainer {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 100px;
+  padding-top: 50px;
+}
+
+.error {
+  font-size: 12px;
+  font-weight: bold;
+  color: #eb2d56;
+}
+.product-action > a {
+  color: blue;
+}
